@@ -9,7 +9,7 @@ node("$NodeName"){
 		)
 		dir('config'){
 			git(
-				url: "git@github.com:jayabalandevops/groovyscripts.git",
+				url: "git@github.com:jayabalandevops/arappconfigscripts.git",
 				branch: "master"
 			)
 		}
