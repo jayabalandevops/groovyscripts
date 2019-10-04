@@ -10,7 +10,7 @@ pipelineJob("$BUName/$ProductName/CICD_$AppName"){
 			filterable()
 			choiceType('SINGLE_SELECT')
 			groovyScript{
-				fallbackScript("Fallback choice script")	
+				fallbackScript('"Fallback choice script"')	
 				script('["select", "master", "develop"]')
 			}
 			description("select the branch to be built.")
