@@ -20,4 +20,9 @@ node("$NodeName"){
 		load 'app/clone.groovy'
 		println("Cloned the App.")
 	}
+	stage("Build"){
+		println("Building the Application...")
+		load 'app/build.groovy'
+		println("Built the App.")
+	}
 }
