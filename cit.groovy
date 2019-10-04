@@ -16,5 +16,8 @@ node("$NodeName"){
 		println("Prepared.")
 	}
 	stage("Clone"){
+		println("Cloning the App Repo...")
+		load 'app/clone.groovy'
+		println("Cloned the App.")
 	}
 }
